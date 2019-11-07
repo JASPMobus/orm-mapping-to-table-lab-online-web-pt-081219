@@ -23,5 +23,5 @@ class Student
   
   def self.drop_table
     sql = <<-SQ:
-    DELETE TABLE students 
+    DROP TABLE students 
 end
