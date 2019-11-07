@@ -16,12 +16,12 @@ class Student
         id INTEGER PRIMARY KEY, 
         name TEXT, 
         grade INTEGER
-        )
+        );
         SQL
     DB[:conn].execute(sql) 
   end
   
   def self.drop_table
     sql = <<-SQ:
-    DROP TABLE students 
+    DROP TABLE students;
 end
