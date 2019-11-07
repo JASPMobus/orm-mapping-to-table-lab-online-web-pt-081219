@@ -32,7 +32,7 @@ class Student
       INSERT INTO students (name, grade) VALUES 
         (?, ?);
       
-      SELECT id FROM students
+      SELECT COUNT(id) FROM students
       SQL
     id = DB[:conn].execute(sql, @name, @grade)
     end
