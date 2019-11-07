@@ -34,6 +34,6 @@ class Student
       
       SELECT COUNT(id) FROM students;
       SQL
-    @id = DB[:conn].execute(sql, @name, @grade)
+    DB[:conn].execute(sql, @name, @grade)
     end
 end
