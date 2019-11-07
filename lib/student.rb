@@ -31,8 +31,6 @@ class Student
     sql = <<-SQL
       INSERT INTO students (name, grade) VALUES 
         (?, ?);
-      
-      SELECT COUNT(id) FROM students;
       SQL
     DB[:conn].execute(sql, @name, @grade)
     end
