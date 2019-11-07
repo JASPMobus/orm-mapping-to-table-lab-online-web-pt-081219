@@ -38,6 +38,6 @@ class Student
   end
   
   def create(hash)
-    
+    Student.new(hash[:name], hash[:grade])
   end 
 end
